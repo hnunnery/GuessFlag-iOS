@@ -48,7 +48,7 @@ struct ContentView: View {
                 })
         }
     }
-//    test github connection
+
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "You Got It!"
