@@ -48,7 +48,7 @@ struct ContentView: View {
                 })
         }
     }
-//    function triggered when flag is tapped
+    
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "You Got It!"
