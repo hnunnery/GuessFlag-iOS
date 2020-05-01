@@ -19,10 +19,10 @@ struct ContentView: View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
             
-            VStack(spacing: 30) {
+            VStack(spacing: 40) {
                 
                 VStack {
-                    Text("Tap the flag of")
+                    Text("Choose flag of")
                         .foregroundColor(.white)
                     Text(countries[correctAnswer])
                         .foregroundColor(.white)
@@ -41,6 +41,7 @@ struct ContentView: View {
                 }
                 Spacer()
             }
+            .padding(.top, 40.0)
         }
         .alert(isPresented: $showingScore) {
             Alert(title: Text(scoreTitle), dismissButton: .default(Text("Continue")) {
